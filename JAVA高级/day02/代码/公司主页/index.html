@@ -1,0 +1,29 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!--
+框架标签
+	frameSet ： 一个frameSet可以把一个页面切割成多份。
+    只能按照行或者列切割。
+     
+    
+    frame   不能被切割的。 frame是位于frameSet中。
+    
+    iframe:  在一个网页中分隔一部分的位置显示另外一个网页的的信息。
+    
+  注意： frameSet标签不能用于body标签体内容。  
+-->
+</head>
+
+	<frameset  rows="20%,70%,*" >
+    	<frame  src="top.html" />
+        <frameset cols="20%,*">
+        	<frame src="left.html" />
+            <frame name="center" src="center.html"/>
+        </frameset>
+    	<frame src="foot.html"/>
+    </frameset><noframes></noframes>
+
+</html>

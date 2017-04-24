@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!-- 
+表单标签： 表单标签的作用是用于提交数据给服务器的。
+	
+    表单标签的根标签是<form>标签
+    
+常用的属性：
+	action: 该属性是用于指定提交数据的地址。
+	method： 指定表单的提交方式。
+    		get : 默认使用的提交方式。  提交的数据会显示在地址栏上。
+            post ：  提交的数据不会显示在地址栏上。
+ 
+ 
+    
+    
+注意： 表单项的数据如果需要提交到服务器上面，那么表单项必须要有name的属性值。
+    
+    
+    
+    
+    
+-->
+</head>
+<body>
+	<form action="http://www.baidu.com" method="post">
+    	<!-- 文本输入框 单行-->
+    	用户名：<input name="userName" type="text"/><br/>
+        <!-- 密码框 -->
+		密码：<input name="password" type="password"/><br/>
+        <!-- 单选框  -->
+        性别： 男<input checked="true" value="man"  name="sex" type="radio"/>   女<input name="sex" value="woman" type="radio"/><br/>
+        <!-- 下拉框 -->
+        来自的城市：<select name="city">	
+                    <option value="BJ">北京</option>
+                    <option value="SH">上海</option>
+                    <option value="GZ">广州</option>
+                    <option value="SZ">深圳</option>
+                </select><br/>
+        <!-- 复选框  同一组的复选框name的属性值要一致 -->
+       兴趣爱好：java <input value="java" name="hobit"  checked="checked" type="checkbox" />javascript <input type="checkbox" value="javascript" name="hobit" />android <input value="android" name="hobit" type="checkbox" /><br/>
+       <!-- 文件上传框-->
+    	大头照：<input name="image" type="file" /><br/>
+    	个人简介:
+        <!-- 文本域 -->
+        <textarea  name="intro" rows="10" cols="30"></textarea><br/>
+        
+        <!-- 提交按钮 -->
+        <input type="submit" value="注册"/>
+    	<!--  重置按钮 -->
+    	<input type="reset" value="重置"/>
+    
+    </form>
+</body>
+</html>
