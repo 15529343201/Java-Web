@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 配置web应用参数 -->
+	<context-param>
+		<param-name>AAA</param-name>
+		<param-value>AAA's value</param-value>
+	</context-param>
+	<context-param>
+		<param-name>BBB</param-name>
+		<param-value>BBB's value</param-value>
+	</context-param>
+	<context-param>
+		<param-name>CCC</param-name>
+		<param-value>CCC's value</param-value>
+	</context-param>
+	
+	
+	
+  
+  <!-- 访问servlet：http://localhost:8080/day10/first -->
+  <!-- 配置一个servlet -->
+  <!-- servlet的配置 -->
+  <servlet>
+  	<!-- servlet的内部名称，自定义。尽量有意义 -->
+  	<servlet-name>FirstServlet</servlet-name>
+  	<!-- servlet的类全名： 包名+简单类名 -->
+  	<servlet-class>gz.itcast.a_servlet.FirstServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Demo1</servlet-name>
+  	<servlet-class>gz.itcast.b_mapping.Demo1</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Demo2</servlet-name>
+  	<servlet-class>gz.itcast.b_mapping.Demo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LifeDemo</servlet-name>
+    <servlet-class>gz.itcast.c_life.LifeDemo</servlet-class>
+    <!-- 让servlet对象自动加载 -->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>LifeDemo2</servlet-name>
+    <servlet-class>gz.itcast.c_life.LifeDemo2</servlet-class>
+    <!-- 让servlet对象自动加载 -->
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>InitDemo</servlet-name>
+    <servlet-class>gz.itcast.d_init.InitDemo</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>TheradDemo</servlet-name>
+    <servlet-class>gz.itcast.e_thread.TheradDemo</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>ConfigDemo</servlet-name>
+    <servlet-class>gz.itcast.f_config.ConfigDemo</servlet-class>
+    <!-- 初始参数： 这些参数会在加载web应用的时候，封装到ServletConfig对象中 -->
+    <init-param>
+    	<param-name>path</param-name>
+    	<param-value>e:/b.txt</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>BBB</param-name>
+    	<param-value>BBB's value</param-value>
+    </init-param>
+     <init-param>
+    	<param-name>CCCC</param-name>
+    	<param-value>CCCC's value</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>ContextDemo1</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContextDemo2</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContextDemo3</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo3</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContextDemo4</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo4</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ForwardDemo1</servlet-name>
+    <servlet-class>gz.itcast.g_forward.ForwardDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RedirectDemo1</servlet-name>
+    <servlet-class>gz.itcast.g_forward.RedirectDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetDataServlet</servlet-name>
+    <servlet-class>gz.itcast.g_forward.GetDataServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <!-- servlet的映射配置 -->
+  <servlet-mapping>
+  	<!-- servlet的内部名称，一定要和上面的内部名称保持一致！！ -->
+  	<servlet-name>FirstServlet</servlet-name>
+  	<!-- servlet的映射路径（访问servlet的名称） -->
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+ 
+   <servlet-mapping>
+  	<servlet-name>Demo1</servlet-name>
+  	<url-pattern>/itcast/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>Demo2</servlet-name>
+  	<url-pattern>/demo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LifeDemo</servlet-name>
+    <url-pattern>/LifeDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LifeDemo2</servlet-name>
+    <url-pattern>/LifeDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InitDemo</servlet-name>
+    <url-pattern>/InitDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TheradDemo</servlet-name>
+    <url-pattern>/ThreadDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfigDemo</servlet-name>
+    <url-pattern>/ConfigDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextDemo1</servlet-name>
+    <url-pattern>/ContextDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextDemo2</servlet-name>
+    <url-pattern>/ContextDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextDemo3</servlet-name>
+    <url-pattern>/ContextDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextDemo4</servlet-name>
+    <url-pattern>/ContextDemo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForwardDemo1</servlet-name>
+    <url-pattern>/ForwardDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RedirectDemo1</servlet-name>
+    <url-pattern>/RedirectDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDataServlet</servlet-name>
+    <url-pattern>/GetDataServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
