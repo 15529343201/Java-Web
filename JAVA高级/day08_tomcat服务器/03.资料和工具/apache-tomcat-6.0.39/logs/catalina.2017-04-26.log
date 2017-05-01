@@ -1,0 +1,148 @@
+四月 26, 2017 3:11:24 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\bin;D:\Git\cmd;C:\Program Files (x86)\100\Tools\Binn\;C:\Program Files\100\Tools\Binn\;C:\Program Files\100\DTS\Binn\;C:\Program Files (x86)\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\100\DTS\Binn\;D:\Python26;D:\OpenVPN\bin;;.
+四月 26, 2017 3:11:24 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8081
+四月 26, 2017 3:11:24 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 809 ms
+四月 26, 2017 3:11:24 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+四月 26, 2017 3:11:24 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.39
+四月 26, 2017 3:11:24 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+四月 26, 2017 3:11:25 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+四月 26, 2017 3:11:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+四月 26, 2017 3:11:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+四月 26, 2017 3:11:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory mybbs
+四月 26, 2017 3:11:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+四月 26, 2017 3:11:25 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8081
+四月 26, 2017 3:11:25 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+四月 26, 2017 3:11:25 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/27  config=null
+四月 26, 2017 3:11:25 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 994 ms
+四月 26, 2017 3:49:26 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory 新建文件夹
+四月 26, 2017 3:49:36 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Undeploying context [/新建文件夹]
+四月 26, 2017 3:49:37 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory myweb
+四月 26, 2017 3:50:07 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Undeploying context [/myweb]
+四月 26, 2017 4:05:47 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Reloading context [/examples]
+四月 26, 2017 4:12:59 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\bin;D:\Git\cmd;C:\Program Files (x86)\100\Tools\Binn\;C:\Program Files\100\Tools\Binn\;C:\Program Files\100\DTS\Binn\;C:\Program Files (x86)\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\100\DTS\Binn\;D:\Python26;D:\OpenVPN\bin;;.
+四月 26, 2017 4:12:59 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8081
+四月 26, 2017 4:12:59 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 569 ms
+四月 26, 2017 4:12:59 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+四月 26, 2017 4:12:59 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.39
+四月 26, 2017 4:12:59 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+四月 26, 2017 4:12:59 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+四月 26, 2017 4:12:59 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+四月 26, 2017 4:12:59 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+四月 26, 2017 4:13:00 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory mybbs
+四月 26, 2017 4:13:00 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+四月 26, 2017 4:13:00 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8081
+四月 26, 2017 4:13:00 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+四月 26, 2017 4:13:00 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/25  config=null
+四月 26, 2017 4:13:00 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 842 ms
+四月 26, 2017 4:16:18 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\bin;D:\Git\cmd;C:\Program Files (x86)\100\Tools\Binn\;C:\Program Files\100\Tools\Binn\;C:\Program Files\100\DTS\Binn\;C:\Program Files (x86)\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\100\DTS\Binn\;D:\Python26;D:\OpenVPN\bin;;.
+四月 26, 2017 4:16:19 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8081
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 646 ms
+四月 26, 2017 4:16:19 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+四月 26, 2017 4:16:19 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.39
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory mybbs
+四月 26, 2017 4:16:19 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+四月 26, 2017 4:16:19 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8081
+四月 26, 2017 4:16:20 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+四月 26, 2017 4:16:20 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/24  config=null
+四月 26, 2017 4:16:20 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 971 ms
+四月 26, 2017 4:20:20 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Reloading context [/examples]
+四月 26, 2017 4:22:10 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory 新建文件夹
+四月 26, 2017 4:22:20 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Undeploying context [/新建文件夹]
+四月 26, 2017 4:22:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory myweb
+四月 26, 2017 4:23:10 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Reloading context [/myweb]
+四月 26, 2017 4:23:51 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Reloading context [/myweb]
+四月 26, 2017 4:24:11 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Reloading context [/myweb]
+四月 26, 2017 4:25:01 下午 org.apache.catalina.startup.HostConfig checkResources
+信息: Reloading context [/myweb]
+四月 26, 2017 4:26:34 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\bin;D:\Git\cmd;C:\Program Files (x86)\100\Tools\Binn\;C:\Program Files\100\Tools\Binn\;C:\Program Files\100\DTS\Binn\;C:\Program Files (x86)\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\100\DTS\Binn\;D:\Python26;D:\OpenVPN\bin;;.
+四月 26, 2017 4:26:35 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8081
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 568 ms
+四月 26, 2017 4:26:35 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+四月 26, 2017 4:26:35 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.39
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory mybbs
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory myweb
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+四月 26, 2017 4:26:35 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8081
+四月 26, 2017 4:26:35 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+四月 26, 2017 4:26:35 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/25  config=null
+四月 26, 2017 4:26:35 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 948 ms
