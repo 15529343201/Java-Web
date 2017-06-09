@@ -1,0 +1,9 @@
+1、SSH
+
+2、资源文件分类（src放置源代码，config放置配置文件，test放置测试代码）
+
+3、日志记录工具log4j(debug,info,warn,error,fatal)
+
+4、抽取BaseDao(CRUD)
+
+5、用户管理（entity,dao,service,action,conf）；日期选择组件WdatePicker.js

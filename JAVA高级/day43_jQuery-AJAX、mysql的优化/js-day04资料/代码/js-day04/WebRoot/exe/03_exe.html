@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>exe_3.html</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<script type="text/javascript" src="../js/jquery-1.8.2.js"></script>
+  </head>
+  <body>
+	
+	<input type="checkbox" value="篮球"/>篮球
+	<input type="checkbox" value="排球"/>排球	
+	<input type="checkbox" value="羽毛球"/>羽毛球	
+	<input type="checkbox" value="乒乓球"/>乒乓球
+	
+	<input type="button" value="选中的个数"/>
+	<input type="button" value="依次显示选中的value"/>
+	
+	<script type="text/javascript">
+		//定位"选中的个数"按钮，同时添加单击事件
+		$(":button:first").click( function(){
+			//获取选中的复选框个数
+			var size = $(":checkbox:checked").size();	
+			//判断
+			if(size == 0){
+				alert("这家伙太赖了");
+			}else{
+				alert("你选中了"+size+"个项目");
+			}
+		} );
+		//定位"依次显示选中的value"按钮，同时添加单击事件
+		$(":button:last").click( function(){
+			//获取选中的复选框
+			var $checkbox = $(":checkbox:checked");
+			//迭代所有选中的复选框的value属性值
+			$checkbox.each(function(){
+				//alert( $(this).val() );//提倡
+				alert( this.value );//不提倡
+			});
+		} );
+	</script>
+	
+  </body>
+</html>
+
+
+
+
+ 

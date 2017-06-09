@@ -1,0 +1,75 @@
+这里只演示Java如何调用Mysql的过程和函数，不是讲解过程和函数如何书写，关于过程和函数的讲解，我们会在Oracle中学习
+
+----------------------------------------------------------------------------------过程
+
+#修改mysql语句的结果符为//
+mysql > delimiter //
+
+#定义一个过程，获取users表总记录数，将10设置到变量count中
+create procedure simpleproc(out count int)
+begin
+    select count(id) into count from users;
+end
+//
+
+#修改mysql语句的结果符为;
+mysql > delimiter ;
+
+#调用过程，将结果覆给变量a，@是定义变量的符号
+call simpleproc(@a);
+
+#显示变量a的值
+select @a;
+
+//以下是Java调用Mysql的过程
+String sql = "{call simpleproc(?)}";
+Connection conn = JdbcUtil.getConnection();
+CallableStatement cstmt = conn.prepareCall(sql);
+cstmt.registerOutParameter(1,Types.INTEGER);
+cstmt.execute();
+Integer count = cstmt.getInt(1);
+System.out.println("共有" + count + "人");
+
+----------------------------------------------------------------------------------函数
+
+#修改mysql语句的结果符为//
+mysql > delimiter //
+
+#定义一个函数，完成字符串拼接
+create function hello( s char(20) ) returns char(50) 
+return concat('hello，',s,'!');
+//
+
+#修改mysql语句的结果符为;
+mysql > delimiter ;
+
+#调用函数
+select hello('world');
+
+//以下是Java调用Mysql的函数
+String sql = "{? = call hello(?)}";
+Connection conn = JdbcUtil.getConnection();
+CallableStatement cstmt = conn.prepareCall(sql);
+cstmt.registerOutParameter(1,Types.VARCHAR);
+cstmt.setString(2,"zhaojun");
+cstmt.execute();
+String value = cstmt.getString(1);
+System.out.println(value);
+JdbcUtil.close(cstmt);
+JdbcUtil.close(conn);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
