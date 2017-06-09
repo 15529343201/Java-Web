@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="config2" namespace="/" extends="struts-default">
+	
+	    <!-- 动态方法调用: http://locahost:8080/struts02/user!login 
+		<action name="user" class="cn.itcast.b_config2.UserAction">
+			<result name="success">/index.jsp</result>			
+		</action>
+		-->
+			
+		<!-- 配置全局跳转视图 -->
+		<global-results>
+			<result name="success">/index.jsp</result>
+		</global-results>
+		
+	
+		
+		<!-- 通配符: http://locahost:8080/struts02/user_login -->
+		<action name="user_*" class="cn.itcast.b_config2.UserAction" method="{1}">
+		</action>
+		
+		<!-- 
+		<action name="test" class="cn.itcast.b_config2.TestAction" method="execute">
+			返回结果标记success对应的页面再当前action中没有配置，
+			所以会去找全局配置有是否有success标记对应的页面
+		</action>
+		 -->
+		 
+		 <!-- 配置各项默认值 -->
+		 <!-- 
+		 	 name  只配置了访问路径名称
+		 	 class 默认执行的action在struts-default有配置
+		 	 		<default-class-ref class="com.opensymphony.xwork2.ActionSupport" />
+		 	 method  默认为execute
+		 	 默认的方法execute返回值为success,对应的页面去全局视图找。
+		 	 
+		  -->
+		 <action name="test"></action>
+		
+		<!-- 什么情况不配置class？ 即处理的aciton -->
+		<!-- 答案： 当只是需要跳转到WEB-INF下资源的时候。 -->
+		 <action name="test2">
+		 	<result name="success" type="redirect">/WEB-INF/index.jsp</result>
+		 </action>
+		
+	</package>	
+	
+</struts>
