@@ -1,0 +1,29 @@
+1.尝试下在方法里面交换如下变量,可交换吗？
+ a="123";
+ b = "321"
+  change(String a,String b){
+
+  }
+ System.out.println(a+“，”+b);
+2.尝试交换数组里面在值
+  change(int[] a){
+       a[1] = 5;
+  }
+
+ System.out.println(a[1]);
+
+3.定义一个final的变量，并且改变他的引用
+
+
+4.定义一个final类，并且继呈他
+
+5.定义一个final方法，在继呈类调用他
+
+
+6.尝试改版对象的引用，
+change(Object o){
+  o = newObj;
+
+}
+
+7.使用接口定义 add delete, update, query方法
