@@ -1,0 +1,1 @@
+java -classpath .\cn.zip;.\com.zip; cn.com.mysnake.SnakeMain

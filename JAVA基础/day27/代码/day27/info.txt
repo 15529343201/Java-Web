@@ -1,0 +1,3 @@
+cn.itcast.reflect.Person
+id=110
+name=Íú²Æ
