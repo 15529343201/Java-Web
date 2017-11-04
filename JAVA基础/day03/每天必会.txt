@@ -1,0 +1,87 @@
+1.算术运算： - （减法、负数），* (乘法)，/ (除法)，%（取模），
+
+int a = 5 ;
+int b = 3;	 
+打印以下结果：
+a+b
+a-b
+a*b
+a/b
+a%b
+
+全部练习完后举一反三
+
+2.自增、自减   :  ++(自增)，--(自减),后自增(a++),后自减（a--）
+int a = 5 ;
+打印以下类容：
+++a
+--a
+a++
+a--
+全部练习完后举一反三
+3.赋值运算符:  = , +=,-=,*=,/=,%=
+练习如下：
+
+int a = 10
+String b = "helloworld";
+
+a += 10;
+a -=10;
+a *= 2;
+a /= 3;
+a %=2;
+
+全部练习完后举一反三
+4.比较运算：==，!=，<,>,<=,>=
+int a = 5;
+int b = 3;
+打印如下类容
+a == b 
+a != b
+a < b
+a > b
+a <=b
+a >=b
+
+全部练习完后举一反三
+5.逻辑运算 ：&& ， ||
+
+true && true 
+true && false
+true || true
+  true || false
+
+全部练习完后举一反三
+6.三元运算符：xx>1?true,false
+int a = 5;
+
+String b = a > 5 ? "大于5","小于5";
+
+7.判断语句：if,else,elseif
+
+int i = 5;
+
+if(i == 5){
+
+}else{
+
+}
+全部练习完后举一反三
+8.switch语句：switch case break
+
+int b = 5;
+
+switch (b){
+  case 5:
+     System.out.println("是5");
+     break;
+  case 2:
+     System.out.println("是2");
+     break;
+   default:
+      System.out.println("不是2也不是5");
+   break;
+} 
+ 
+全部练习完后举一反三
+
