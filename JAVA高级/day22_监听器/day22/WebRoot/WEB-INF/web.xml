@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<!-- session的最大活跃时间 -->
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+	<!-- 监听request对象创建、销毁 -->
+	<listener>
+		<listener-class>cn.itcast.a_life.MyRequestListener</listener-class>
+	</listener>
+	<!-- 监听session对象创建、销毁 -->
+	<listener>
+		<listener-class>cn.itcast.a_life.MySessionListener</listener-class>
+	</listener>
+
+	<!-- 监听servletContext对象创建、销毁 -->
+	<listener>
+		<listener-class>cn.itcast.a_life.MyServletContextListener</listener-class>
+	</listener>
+	
+	<!-- 属性监听器 -->
+	<listener>
+		<listener-class>cn.itcast.b_attr.MySessionAttrListener</listener-class>
+	</listener>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
