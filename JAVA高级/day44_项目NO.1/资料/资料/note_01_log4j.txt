@@ -1,8 +1,0 @@
-
-log4j日志级别：
-
-debug
-info
-warn
-error
-fatal
