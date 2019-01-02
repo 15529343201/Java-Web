@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 修改主题 (当前项目所有的标签都用此主题)-->
+	<constant name="struts.ui.theme" value="simple"></constant>
+
+	<package name="validation" extends="struts-default">
+		
+		<!-- 注册失败跳转到注册页面，显示失败信息 -->
+		<global-results>
+			<result name="input">/register.jsp</result>
+		</global-results>
+	
+		<action name="user_*" class="cn.itcast.a_validation.UserAction" method="{1}">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+
+	</package>
+
+</struts>
