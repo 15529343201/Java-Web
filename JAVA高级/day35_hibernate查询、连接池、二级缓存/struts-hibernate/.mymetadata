@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="struts-hibernate"
+  id="myeclipse.1427099911234"
+  context-root="/struts-hibernate"
+  j2ee-spec="5.0"
+  archive="struts-hibernate.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
