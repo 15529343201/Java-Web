@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-beans-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-context-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-core-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-expression-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/commons-dbutils-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/mysql-connector-java-5.1.12-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/ognl-3.0.5.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/struts2-core-2.3.4.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts/xwork-core-2.3.4.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-web-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/struts2-spring-plugin-2.3.4.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/aopalliance.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/mysql-connector-java-5.1.12-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-aop-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-jdbc-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-orm-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core/spring-tx-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>
