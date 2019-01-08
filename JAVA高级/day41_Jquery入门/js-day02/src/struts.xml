@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="myPackage" extends="json-default" namespace="/">
+		
+		<!-- 全局结果类型 -->
+		<global-results>
+			<result name="success" type="json"/>
+		</global-results>
+		
+		
+		
+		<action 
+			name="checkRequest" 
+			class="cn.itcast.javaee.js.checkcode.CheckcodeAction" 
+			method="check">
+		</action>
+		
+		
+		
+
+		
+		<!-- 省份->城市 -->
+		<action 
+			name="findCityByProvinceRequest" 
+			class="cn.itcast.javaee.js.provincecityarea.ProvinceCityAreaAction" 
+			method="findCityByProvince">
+		</action>
+		
+		
+		<!-- 城市->区域 -->
+		<action 
+			name="findAreaByCityRequest" 
+			class="cn.itcast.javaee.js.provincecityarea.ProvinceCityAreaAction" 
+			method="findAreaByCity">
+		</action>
+		
+		
+		
+	
+	</package>
+
+</struts>
