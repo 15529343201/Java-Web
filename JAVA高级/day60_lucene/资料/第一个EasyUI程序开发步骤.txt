@@ -1,0 +1,33 @@
+第一：
+     创建一个web应用lucene-day02
+
+第二：
+     导入jquery.easyui.min.js
+和jquery.min.js到WebRoot的js目录下
+     导入themes目录到WebRoot目录下
+
+第三：
+      在WebRoot目录下创建01_base.html页面
+      <head>
+          <title>我的第一个EasyUI程序</title>
+	  <!-- 引入easyui的css文件 -->
+          <link rel="stylesheet" href="themes/default/easyui.css" type="text/css"></link>
+          <link rel="stylesheet" href="themes/icon.css" type="text/css"></link>
+  	  <!-- 引入easyui的js文件，先引入jquery，再引入easyui -->  
+          <script type="text/javascript" src="js/jquery.min.js"></script>
+          <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+      </head>
+
+第四：
+      在<body>中写入如下代码：
+      <div 
+		id="p" 
+		class="easyui-panel" 
+		style="width:500px;height:200px;padding:10px;"   
+        	title="My Panel" 
+       		iconCls="icon-save" 
+        	collapsible="true">   
+   		可折叠功能的面板<br/>
+   		可折叠功能的面板<br/>
+   		可折叠功能的面板<br/>
+      </div> 

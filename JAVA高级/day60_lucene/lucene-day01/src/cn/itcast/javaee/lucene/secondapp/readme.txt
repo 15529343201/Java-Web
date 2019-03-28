@@ -1,0 +1,1 @@
+使用LuceneUtil工具类,重构第一个Lucene例子
