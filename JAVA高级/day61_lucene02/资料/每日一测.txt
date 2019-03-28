@@ -1,0 +1,18 @@
+(01)rownum和rowid有何区别?
+    rownum在表结构中是看不见的,只能在select中明确写出rownum方可显示
+    rownum与不同的表绑定在一起,每张表都有自己的rownum,每张表的rownum可以相同,表亡rownum亡
+    rownum可用于oracle分页中
+    rownum是从1开始的连续不断的数值型
+
+    rowid在表结构中是看不见的,只能在select中明确写出rowid方可显示
+    rowid在每张表中都不一样,表亡rowid亡,它是沟通表与DBF文件的桥梁
+    rowid可用于索引中
+(02)IndexWriter和IndexSearcher有何作用?
+    IndexWriter将Document对象写入到索引库中,适用于增删改操作
+    IndexSearcher根据关键字区索引库中查询符合条件的数据,只适用于查询操作
+(03)Directory directory=FSDirectory.open(new File("E:/LuceneDBDBDBDB"));这句话什么意思?
+    索引库对应的硬盘上的目录,如果无则创建;反之不创建
+(04)document.add(new Field("content",article.getContent(),Store.YES,Index.ANALYZED));这句话什么意思?
+    将content字段和其对应的值,放入到索引库的原始表中,且该字段的值需要进行分词
+(05)TopDocs topDocs=indexSeracher.search(query,10);这句话什么意思?
+    去索引库中查询符合条件的数据,超过10条数据,只取前10条;不足10条,以实际为准

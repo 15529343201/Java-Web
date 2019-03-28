@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>表格</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!-- 引入css文件，无顺序 -->
+    <link rel="stylesheet" href="themes/icon.css" type="text/css"></link>
+    <link rel="stylesheet" href="themes/default/easyui.css" type="text/css"></link>
+    
+  	<!-- 引入js文件，有顺序 -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+
+  </head>
+  <body>
+	
+	<!-- 
+		data-options是easyui特有的属性
+		url表示加载json的路径
+		fitColumns=true表示等分宽度，要配合width:100这个属性值(提倡)
+		fitColumns=false表示不等分宽度，这时由width:100这个属性值来决定宽度，默认为false
+		singleSelect=true表示可以选择表格中的一项
+		singleSelect=false表示可以选择表格中的多项，默认为false
+	-->
+	<table 
+		style="width:400px;height:250px"
+		border="2" 
+		align="center" 
+		class="easyui-datagrid"
+		data-options="url:'data/datagrid_data.json',fitColumns:true,singleSelect:true">
+		<thead>
+			<tr>
+				<th data-options="field:'id',width:50">编号</th>
+				<th data-options="field:'name',width:50">姓名</th>
+				<th data-options="field:'sal',width:50">薪水</th>
+				<th data-options="field:'sex',width:50">性别</th>
+			</tr>
+		</thead>
+	</table>
+	
+  </body>
+</html>
